@@ -49,6 +49,7 @@ public class FirstFragment extends Fragment {
     //Somente para ficar melhor a obtenção do sharedprefences
     Activity activity;
 
+    //Keys para usar no sharedpreferences, na hora de setar e retornar os valores
     public static final String  EDIT_TEXT_KEY = "edit_text_key";
     public static final String  SEEK_BAR_KEY = "seek_bar_key";
     public static final String  SWITCH_CONFIGURACAO_FIRST_KEY = "switch_configuracao_first";

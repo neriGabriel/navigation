@@ -30,6 +30,10 @@ public class FirstFragment extends Fragment {
 
     private FragmentFirstBinding fragmentFirstBinding;
 
+     //Para usar o viewbinding necessitamos add esse código no build.gradle(app)
+     // viewBinding { enabled = true } dentro de android
+
+
      //Sempre que usar binding tem que dar build/re-build
      //Ver sobre preference fragment android
      //Primeiramente para usar o navigation é necessário fazer o import das bibliotecas nos build.gradles

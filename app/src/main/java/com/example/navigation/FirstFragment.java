@@ -91,6 +91,7 @@ public class FirstFragment extends Fragment {
 
 
         //Pegando a informação do sharedpreferences
+        //Sharedpreferences define valores padrão
         //O sharedpreferences salva mesmo depois que o app é destruido, normalmente é utilizado em configurações
         this.editTextValor.setText(sharedPreferences.getString(this.EDIT_TEXT_KEY, ""));
         this.switchConfig1.setChecked(sharedPreferences.getBoolean(this.SWITCH_CONFIGURACAO_FIRST_KEY, false));
@@ -140,6 +141,7 @@ public class FirstFragment extends Fragment {
         sharedEditor.apply();
     }
 
+    //Reseta o sharedpreferences
     private void resetSharedPreferences() {
         SharedPreferences.Editor sharedEditor = sharedPreferences.edit();
         sharedEditor.clear();
